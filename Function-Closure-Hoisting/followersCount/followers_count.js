@@ -6,6 +6,19 @@ function increaseCount(){
     checkCountValue()
 }
 
+function decreaseCount(){
+    if(count <=0){
+        count =0;
+    } else{count--;}
+    
+    displayCount();
+}
+
+function resetCount(){
+    count=0;
+    alert("Your Instagram account Followers count reseted to 0.")
+    document.getElementById('countDisplay').innerHTML=count;    
+}
 function displayCount(){
     document.getElementById('countDisplay').innerHTML=count;
 }
